@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+ font-family: 'Outfit', sans-serif;
+ font-family: 'Work Sans', sans-serif;
+ height: 100vh;
+}
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 768px;
+    height: 500px;
+    margin: 100px auto;
+    box-shadow: 4px 7px 20px 0px #00000059;
+    border-radius: 12px;
+}
+@media (max-width:767px){
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+}
+  
+.container .left {
+  width: 45%;
+  background: linear-gradient( hsl(252deg 53.55% 47.27%), hsl(241deg 65.01% 33.97%));
+  color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 30px;
+  text-align: center;
+}
+@media (max-width:767px){
+  .container .left {
+    width: 100%;
+    height: 45%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius:30px ;
+}
+}
+.container .left .section-title {
+  text-transform: capitalize;
+  color: hsl(224deg 13.62% 53.68%);
+  font-size: 25px;
+}
+.container .left .result-score {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(hsl(256deg 73.01% 33.31%),hsl(256deg 54.57% 35.75% / 20%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(224deg 13.62% 53.68%);
+  font-weight: 600;
+}
+.container .left .result-score span {
+  font-size: 70px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);  
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.left .result-rank {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 35px;
+}
+.left .sec-p { 
+  color: hsl(224deg 13.62% 53.68%);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.container .right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width:767px){
+  .container .right {
+    width: 100%;
+    height: 55%;
+    align-items: center;
+    padding: 0 30px;
+}
+}
+.right .section-title {
+  text-transform: capitalize;
+}
+@media (max-width:767px){
+  .right .section-title {
+ width: 80%;
+display: flex;
+justify-content: flex-start;
+}
+}
+.right .flex-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+  margin-right: 45px;
+width: 300px;
+height: 40px;
+}
+@media (max-width:767px){
+  .right .flex-group {
+  width: 80%;
+}
+}
+.right p {
+  color:hsl(224deg 13.62% 53.68%) ;
+  font-size: 20px;
+  font-weight: 600;
+}
+.right p span {
+  color: black;
+}
+.right .reaction {
+ display: flex;
+ gap: 10px;
+}
+.right .reaction img {
+ width: 25px; 
+}
+.right .reaction h3 {
+  font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: hsl(0, 100%, 67%);
+}
+.right .memory {
+  display: flex;
+  gap: 10px;
+ }
+ .right .memory img {
+  width: 25px; 
+ }
+ .right .memory h3 {
+   font-size: 25px;
+     text-align: center;
+     text-transform: capitalize;
+     color: hsl(39, 100%, 56%);
+ }
+ .right .verbal {
+  display: flex;
+  gap: 10px;
+ }
+ .right .verbal img {
+  width: 25px; 
+ }
+ .right .verbal h3 {
+   font-size: 25px;
+     text-align: center;
+     text-transform: capitalize;
+     color:hsl(166, 100%, 37%);
+ }
+ .right .visual {
+  display: flex;
+  gap: 10px;
+ }
+ .right .visual img {
+  width: 25px; 
+ }
+ .right .visual h3 {
+   font-size: 25px;
+     text-align: center;
+     text-transform: capitalize;
+     color: hsl(234, 85%, 45%);
+ }
+ #red {
+  background: linear-gradient(45deg, #efacac, transparent);
+}
+ #yellow {
+  background: linear-gradient(45deg, #FFEB3B, transparent);
+}
+ #green {
+  background: linear-gradient(45deg, #94e3dc96, transparent);
+}
+ #blue {
+  background: linear-gradient(45deg, #bcc6ff, transparent);
+}
+.button {
+  margin-right: 45px;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  height: 55px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+@media (max-width:767px){
+  .button  {
+  width: 80%;
+  padding: 0 30px;
+}
+}
+.button:hover {
+  background:linear-gradient(hsl(256deg 73.01% 33.31%),hsl(256deg 54.57% 35.75%)); ;
+}
